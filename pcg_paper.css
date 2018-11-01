@@ -16,84 +16,112 @@
 
 /* Page Layout and Design */
 html {
-    background-color: rgb(200, 150, 40);
+    background-color: rgb(233, 196, 115);
 }
-
+/* Moved image to the middle of the header and gives it it's width*/
 header img {
     display: block;
     width: 90%;
     margin-right: 5%;
     margin-left: 5%;
 }
-
+/* Gives body layout */
 body {
     position: relative;
     height: 100%;
-    background-color: rgb(223, 182, 101);
+    background-color: rgb(243, 219, 172);
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
     min-width: 360px;
 }
+body header{
+    width: 100%;
+}
 
 h1 {
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
 }
 
 /* Section */
+/* Moved the section element from the left and gave it some space from the right border of the body*/
 section {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 20%;
-    margin-right: 2.5%;
+    margin-right: 20%;
+    font-size: 1em;
+    line-height: 1.2em;
 }
-
-/* Nav styles */
-nav a:link,
-nav a:visited {
-    text-decoration: none;
-    color: black;
+/* Each section has a 50 pixel space above the next element */
+section#one{
+    margin-top: 50px;
 }
-
-nav a:active,
-nav a:hover {
-    background-color: rgba(255, 142, 36, 0.5)
+section#two{
+margin-top: 50px;
 }
-
-nav.horizontal {
-    width: 100%;
-    background-color: rgb(60, 30, 80);
-    clear: both;
+section#three{
+    margin-top: 50px;
+    }
+    section#four{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        }
+/* Aside  */
+aside#left{
+    width:20%;
+    float: left;
 }
-
-nav.vertical {
-    /* background-color: red; */
-    display: block;
-    width: 10%;
-    clear: both;
-    height: 100%;
+aside#right{
+    width: 20%;
+    float: right;
 }
-
-nav.vertical ul li {
-    display: block;
-    width: 10%;
-    text-align: center;
-}
-
-nav.vertical a:active,
-nav.vertical a:hover {
-    background-color: rgba(50, 50, 50, .05)
-}
-
-/* Creating horizontal nav */
+/* Horizontal Navigation styles */
 header nav ul li {
     display: block;
     float: left;
     width: 12.5%;
-    text-align: center;
 }
+/* Removes underline and gives font family to the navs */
+nav a:link,
+nav a:visited {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: black;
+}
+/* Each link is underlined when hovered above */
+nav.horizontal a:active,
+nav.horizontal a:hover {
+text-decoration: underline;
+}
+
+/* Vertical Navigation */
+/* Gives space from this nav from the horizontal nav. Clears floated elements around it */
+nav.vertical {
+    clear: both;
+    height: 100%;
+    margin-top: 50px;
+
+}
+/* Gives the width to vertical nav, puts the links in the center, and gives each line space above the other */
+nav.vertical ul li {
+    display: block;
+    width: 10%;
+    text-align: center;
+    line-height: 2em;
+}
+/* Gives both vertical navigation list an underline and increase in font size when the mouse goes above it */
+nav.vertical a:active,
+nav.vertical a:hover {
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
 
 /* Footer Styles */
 footer>address {
-    background-color: rgb(192, 194, 100);
+    background-color: rgb(253, 210, 115);
     width: 100%;
     text-align: center;
 }
