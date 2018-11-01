@@ -69,15 +69,18 @@ section#three{
         margin-bottom: 50px;
         }
 /* Aside  */
+/* Put the aside element to the left, so that it doesn't interfer with the section elements */
 aside#left{
     width:20%;
     float: left;
 }
+/* Placed the aside element to the right, so that it doesn't interfer with the section elements */
 aside#right{
     width: 20%;
     float: right;
 }
 /* Horizontal Navigation styles */
+/* Each list item has a width of 12.5% of the overall header navigation. The header Nav is also formatted to be horizontal */
 header nav ul li {
     display: block;
     float: left;
