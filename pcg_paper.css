@@ -28,15 +28,22 @@ header img {
 
 body {
     position: relative;
-    width: 90%;
     height: 100%;
     background-color: rgb(223, 182, 101);
     margin-left: auto;
     margin-right: auto;
+    max-width: 960px;
+    min-width: 360px;
 }
 
 h1 {
     text-align: center;
+}
+
+/* Section */
+section {
+    margin-left: 20%;
+    margin-right: 2.5%;
 }
 
 /* Nav styles */
@@ -48,13 +55,32 @@ nav a:visited {
 
 nav a:active,
 nav a:hover {
-    background-color: rgba(165, 108, 194, 0.5)
+    background-color: rgba(255, 142, 36, 0.5)
 }
 
-nav {
+nav.horizontal {
     width: 100%;
     background-color: rgb(60, 30, 80);
     clear: both;
+}
+
+nav.vertical {
+    /* background-color: red; */
+    display: block;
+    width: 10%;
+    clear: both;
+    height: 100%;
+}
+
+nav.vertical ul li {
+    display: block;
+    width: 10%;
+    text-align: center;
+}
+
+nav.vertical a:active,
+nav.vertical a:hover {
+    background-color: rgba(50, 50, 50, .05)
 }
 
 /* Creating horizontal nav */
